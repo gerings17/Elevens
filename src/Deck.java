@@ -46,7 +46,7 @@ public class Deck {
 	 * @return true if this deck is empty, false otherwise.
 	 */
 	public boolean isEmpty() {
-		return cards.isEmpty();
+		return size==0;
 	}
 
 	/**
@@ -72,7 +72,7 @@ public class Deck {
 	 *         previously dealt.
 	 */
 	public Card deal() {
-		if (this.isEmpty()) return null;
+		if (size==0) return null;
 		size--;
 		return cards.get(size);
 	}

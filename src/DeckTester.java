@@ -21,7 +21,12 @@ public class DeckTester {
 		assertEquals(tester.getCards().get(2),d);
 		assertEquals(2,tester.size());
 		
-		System.out.println(tester.getCards().toString());
+		//System.out.println(tester.toString());
+		tester.deal();
+		tester.deal();
+		System.out.println(tester.toString());
+		System.out.println(tester.isEmpty());
+		System.out.println(tester.deal());
 	}
 	
 	
